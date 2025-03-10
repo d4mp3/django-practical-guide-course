@@ -1,15 +1,15 @@
 {% load static %}
 
 <li>
-    <article class="post">
-        <a href="">
-            <img src="{% static 'blog/images/forest.jpg' %}" alt="Hiking in the woods" />
-            <div class="post__content">
-            <h3>Hiking in the woods</h3>
-            <p>
-                There's nothing like a wildness in the dark forest
-            </p>
-            </div>
-        </a>
-    </article>
+  <article class="post">
+    <a href="{% url 'post-detail-page' 'the-woods'%}">
+      <img src="{% static 'blog/images/forest.jpg' %}" alt="Hiking in the woods" />
+      <div class="post__content">
+        <h3>Hiking in the woods</h3>
+        <p>
+          There's nothing like a wildness in the dark forest
+        </p>
+      </div>
+    </a>
+  </article>
 </li>

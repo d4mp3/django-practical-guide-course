@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+This Post Title
+{% endblock title %}
+
+{% block css_files %}
+  <link rel="stylesheet" href="{% static 'blog/post-detail.css' %}" />
+{% endblock css_files %}
+
+{% block content %}
+  <section id="summary">
+    <h2>Post Title</h2>
+    <article>
+      <img src="{% static 'blog/images/woods.jpg'%}" alt="Post Title">
+      <address>By Dam</address>
+      <div>
+        Last updated on <time datetime="">July 10th</time>
+      </div>
+    </article>
+  </section>
+
+  <main>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ullam odio neque similique provident accusantium reprehenderit esse culpa dicta nisi! Corporis cumque voluptate alias neque amet ipsa voluptas. Minus, quasi.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ullam odio neque similique provident accusantium reprehenderit esse culpa dicta nisi! Corporis cumque voluptate alias neque amet ipsa voluptas. Minus, quasi.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ullam odio neque similique provident accusantium reprehenderit esse culpa dicta nisi! Corporis cumque voluptate alias neque amet ipsa voluptas. Minus, quasi.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ullam odio neque similique provident accusantium reprehenderit esse culpa dicta nisi! Corporis cumque voluptate alias neque amet ipsa voluptas. Minus, quasi.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ullam odio neque similique provident accusantium reprehenderit esse culpa dicta nisi! Corporis cumque voluptate alias neque amet ipsa voluptas. Minus, quasi.
+    </p>
+  </main>
+{% endblock content %}
