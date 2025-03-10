@@ -23,10 +23,9 @@ OffBeat Blog
   <h2>The Offbeat Feed</h2>
 
   <ul>
-    {% include "blog/includes/post.html" %}
-    {% include "blog/includes/post.html" %}
-    {% include "blog/includes/post.html" %}
-    {% include "blog/includes/post.html" %}
+    {% for post in posts %}
+      {% include "blog/includes/post.html" %}
+    {% endfor %}
   </ul>
 </section>
 
