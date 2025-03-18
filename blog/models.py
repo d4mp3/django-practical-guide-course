@@ -1,5 +1,6 @@
-from django.db import models
 from django.core.validators import MinLengthValidator
+from django.db import models
+
 
 class Tag(models.Model):
     caption = models.CharField(max_length=20)
